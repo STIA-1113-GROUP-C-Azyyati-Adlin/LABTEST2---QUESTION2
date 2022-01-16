@@ -1,0 +1,62 @@
+package LabTest;
+
+import java.util.Scanner;
+
+public class Labtest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Scanner sc = new Scanner (System.in);
+		
+		int m;
+		int mark,mark2,mark3;
+		double avg;
+        
+		do {
+			System.out.println("Enter the mark (0-100) for student 1: ");
+			mark = sc.nextInt();
+		
+        if (mark < 0 || mark > 100) {
+        	System.out.println("Invalid input,try again....");
+           }
+        }while (mark <= 0 || mark >= 100);
+	
+        do {
+        	System.out.println("Enter the mark (0-100) for student 2: ");
+    		mark2 = sc.nextInt();
+    		
+    	if (mark2 < 0 || mark2 > 100) {
+    		System.out.println("Invalid input,try again....");
+    	   }
+        }while (mark2 <=0 || mark2 >= 100);
+    		
+        do {
+        	System.out.println("Enter the mark (0-100) for student 3: ");
+        	mark3 = sc.nextInt();
+        
+        if (mark3 < 0 || mark3 > 100) {
+            System.out.println("Invalid input,try again....");
+            }
+        }while (mark3 <= 0 || mark3 >= 100);
+        
+        System.out.println();
+        
+        avg = (mark + mark2 + mark3)/3;
+        System.out.printf("The average is: "+ "%.2f",avg); 
+		}
+	}
+
+OUTPUT :
+
+Enter the mark (0-100) for student 1: 
+67
+Enter the mark (0-100) for student 2: 
+130
+Invalid input,try again....
+Enter the mark (0-100) for student 2: 
+89
+Enter the mark (0-100) for student 3: 
+75
+
+The average is: 77.00
